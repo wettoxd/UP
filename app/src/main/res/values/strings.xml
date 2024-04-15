@@ -2,4 +2,8 @@
     <string name="app_name">exam</string>
     <string name="str1">Quick Delivery at Your Doorstep</string>
     <string name="str2">Enjoy quick pick-up and delivery to your destination</string>
+    <string name="str3">Flexible Payment</string>
+    <string name="str4">Different modes of payment either before and after delivery without stress</string>
+    <string name="str5">Real-time Tracking</string>
+    <string name="str6">Track your packages/items from the comfort of your home till final destination</string>
 </resources>
