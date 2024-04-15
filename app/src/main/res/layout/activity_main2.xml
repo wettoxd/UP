@@ -8,7 +8,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="83dp">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -54,8 +56,16 @@
             android:layout_width="345dp"
             android:layout_height="63dp"
             android:text="TextView"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="447dp" />
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="530dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="345dp"
+            android:layout_height="63dp"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="441dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
