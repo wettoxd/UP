@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity4">
+    tools:context=".Onboarding_3">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -32,6 +32,7 @@
             android:layout_marginTop="13dp"
             android:layout_marginBottom="35dp"
             android:backgroundTint="#0560FA"
+            android:onClick="sign_up"
             android:text="Sign Up"
             android:textColorHighlight="#2962FF"
             android:textColorLink="#2962FF"
@@ -97,6 +98,7 @@
             android:layout_width="50dp"
             android:layout_height="24dp"
             android:layout_marginTop="11dp"
+            android:onClick="log_in"
             android:text="Sign in"
             android:textColor="#2F80ED"
             app:layout_constraintBottom_toBottomOf="parent"

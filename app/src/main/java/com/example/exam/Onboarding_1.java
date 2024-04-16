@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity2 extends AppCompatActivity {
+public class Onboarding_1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,13 +16,13 @@ public class MainActivity2 extends AppCompatActivity {
 
     public void skip(View view) {
         Intent intent;
-        intent = new Intent(MainActivity2.this, MainActivity4.class);
+        intent = new Intent(Onboarding_1.this, Onboarding_3.class);
         startActivity(intent);
     }
 
     public void next(View view) {
         Intent intent;
-        intent = new Intent(MainActivity2.this, MainActivity3.class);
+        intent = new Intent(Onboarding_1.this, Onboarding_2.class);
         startActivity(intent);
     }
 

@@ -12,16 +12,22 @@
         android:theme="@style/Theme.Exam"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity4"
+            android:name=".Log_in"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".Sign_up"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".Onboarding_3"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Onboarding_2"
+            android:exported="false" />
+        <activity
+            android:name=".Onboarding_1"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
