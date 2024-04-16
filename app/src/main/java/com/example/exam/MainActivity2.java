@@ -13,7 +13,7 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
     }
-
+    //метод для перехода на новую активити
     public void skip(View view) {
         Intent intent;
         intent = new Intent(MainActivity2.this, MainActivity4.class);
