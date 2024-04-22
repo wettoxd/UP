@@ -52,7 +52,7 @@
             android:id="@+id/textView"
             android:layout_width="332dp"
             android:layout_height="48dp"
-            android:layout_marginBottom="70dp"
+            android:layout_marginBottom="65dp"
             android:text="@string/str6"
             android:textAlignment="center"
             android:textSize="18dp"
@@ -79,35 +79,47 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="163dp"
-            android:layout_height="23dp"
-            android:layout_marginTop="12dp"
-            android:text="Already have an account?"
-            android:textColor="#cfcfcf"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.341"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button5"
-            app:layout_constraintVertical_bias="0.0" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="50dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="11dp"
-            android:onClick="log_in"
-            android:text="Sign in"
-            android:textColor="#2F80ED"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.716"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button5"
-            app:layout_constraintVertical_bias="1.0" />
 
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="163dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="Already have an account?"
+                android:textColor="#cfcfcf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="50dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="12dp"
+                android:onClick="log_in"
+                android:text="Sign in"
+                android:layout_marginBottom="5dp"
+                android:textColor="#2F80ED"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button5"
+                app:layout_constraintVertical_bias="1.0" />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

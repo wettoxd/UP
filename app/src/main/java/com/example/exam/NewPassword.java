@@ -11,28 +11,30 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Log_in extends AppCompatActivity {
+public class NewPassword extends AppCompatActivity {
 
-    private EditText emailEditText, passwordEditText;
-    private Button loginButton;
+    private EditText passwordEditText;
+    private EditText confirmPasswordEditText;
+    private Button logInButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in);
+        setContentView(R.layout.activity_new_password);
 
-        emailEditText = findViewById(R.id.editTextText3);
         passwordEditText = findViewById(R.id.editTextText4);
-        loginButton = findViewById(R.id.button3);
-        loginButton.setEnabled(false);
+        confirmPasswordEditText = findViewById(R.id.editTextText5);
+        logInButton = findViewById(R.id.button3);
 
         // Установите слушателей на поля ввода
-        emailEditText.addTextChangedListener(textWatcher);
         passwordEditText.addTextChangedListener(textWatcher);
+        confirmPasswordEditText.addTextChangedListener(textWatcher);
 
+        // Изначально кнопка не кликабельна
+        logInButton.setEnabled(false);
     }
 
-    private TextWatcher textWatcher = new TextWatcher() {
+    private final TextWatcher textWatcher = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
         }
@@ -44,27 +46,25 @@ public class Log_in extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable s) {
             // Проверяем, заполнены ли все поля
-            if (emailEditText.getText().toString().trim().length() > 0 &&
-                    passwordEditText.getText().toString().trim().length() > 0) {
+            boolean allFieldsFilled = !passwordEditText.getText().toString().trim().isEmpty() &&
+                    !confirmPasswordEditText.getText().toString().trim().isEmpty();
+
+            if (allFieldsFilled) {
                 // Если все поля заполнены, делаем кнопку кликабельной и меняем её цвет на синий
-                loginButton.setEnabled(true);
-                loginButton.setBackgroundColor(Color.parseColor("#2F80ED"));
+                logInButton.setEnabled(true);
+                logInButton.setBackgroundColor(Color.parseColor("#2F80ED"));
             } else {
                 // Если не все поля заполнены, делаем кнопку некликабельной и возвращаем её цвет в исходное состояние
-                loginButton.setEnabled(false);
-                loginButton.setBackgroundColor(Color.parseColor("#A7A7A7"));
-                loginButton.setTextColor(Color.parseColor("#FFFFFF"));
+                logInButton.setEnabled(false);
+                logInButton.setBackgroundColor(Color.parseColor("#A7A7A7"));
+                logInButton.setTextColor(Color.parseColor("#FFFFFF"));
             }
         }
     };
 
-    public void sign_up(View view) {
-        Intent intent = new Intent(Log_in.this, Sign_up.class);
-        startActivity(intent);
-    }
-
-    public void forgot_password(View view) {
-        Intent intent = new Intent(Log_in.this, Forgot_password.class);
+    public void log_in(View view) {
+        // Здесь ваша логика перехода на экран входа
+        Intent intent = new Intent(NewPassword.this, Log_in.class);
         startActivity(intent);
     }
 }
