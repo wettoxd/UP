@@ -60,5 +60,10 @@ public class Home_page extends AppCompatActivity implements BottomNavigationView
         startActivity(intent);
     }
 
+    public void gotosendpackage_2(View view) {
+        Intent intent = new Intent(Home_page.this, Send_a_package.class);
+        startActivity(intent);
+    }
+
 
 }
