@@ -95,7 +95,7 @@
                 android:background="@android:drawable/editbox_background"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:hint="***********@mail.com"
+                android:hint="***********@gmail.com"
                 android:textColor="#A6A6A6" />
 
             <TextView

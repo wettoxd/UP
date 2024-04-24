@@ -67,4 +67,9 @@ public class Log_in extends AppCompatActivity {
         Intent intent = new Intent(Log_in.this, Forgot_password.class);
         startActivity(intent);
     }
+
+    public void home_page(View view) {
+        Intent intent = new Intent(Log_in.this, Home_Fragment.class);
+        startActivity(intent);
+    }
 }

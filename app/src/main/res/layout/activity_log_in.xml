@@ -60,7 +60,7 @@
                     android:background="@android:drawable/editbox_background"
                     android:ems="10"
                     android:inputType="textEmailAddress"
-                    android:hint="***********@mail.com"
+                    android:hint="***********@gmail.com"
                     android:textColor="#A6A6A6" />
 
                 <TextView
@@ -116,10 +116,11 @@
                     android:layout_height="60dp"
                     android:layout_marginTop="80dp"
                     android:backgroundTint="#A7A7A7"
+                    android:onClick="home_page"
                     android:text="Log in"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:textSize="20dp"
+                    android:textStyle="bold"
                     app:cornerRadius="4.96dp" />
 
                 <LinearLayout

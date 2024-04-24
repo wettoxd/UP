@@ -12,4 +12,10 @@
     <string name="str10">Enter your email address</string>
     <string name="str11">Enter the 6 digit numbers sent to your email</string>
     <string name="str12">Enter new password</string>
+    <string name="title_activity_home_page">Home_page</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
