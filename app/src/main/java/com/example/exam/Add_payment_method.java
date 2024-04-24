@@ -15,7 +15,7 @@ public class Add_payment_method extends AppCompatActivity {
     }
 
     public void backback(View view) {
-        Intent intent = new Intent(Add_payment_method.this, Profile_Fragment.class);
+        Intent intent = new Intent(Add_payment_method.this, Home_page.class);
         startActivity(intent);
     }
 }

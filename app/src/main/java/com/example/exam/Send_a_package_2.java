@@ -15,7 +15,7 @@ public class Send_a_package_2 extends AppCompatActivity {
     }
 
     public void backtohome(View view) {
-        Intent intent = new Intent(Send_a_package_2.this, Home_Fragment.class);
+        Intent intent = new Intent(Send_a_package_2.this, Home_page.class);
         startActivity(intent);
     }
 

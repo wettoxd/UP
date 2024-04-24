@@ -10,11 +10,11 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class Transaction_succesful extends AppCompatActivity {
+public class Delivery_succesful extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_transaction_succesful);
+        setContentView(R.layout.activity_delivery_succesful);
 
         ImageView animation = findViewById(R.id.animat);
 
@@ -32,19 +32,13 @@ public class Transaction_succesful extends AppCompatActivity {
                 frameAnimation.stop();
                 animation.setBackground(getDrawable(R.drawable.sucsesfulsecond));
                 TextView suc = findViewById(R.id.confirm);
-                suc.setText("Transaction Successful");
+                suc.setText("Delivery Successful");
             }
 
         }.start();
     }
-    public void gohome (View view){
-        Intent intent = new Intent(Transaction_succesful.this, Home_Fragment.class);
+    public void done (View view){
+        Intent intent = new Intent(Delivery_succesful.this, Home_page.class);
         startActivity(intent);
     }
-
-    public void tracking (View view){
-        Intent intent = new Intent(Transaction_succesful.this, Home_page.class);
-        startActivity(intent);
-    }
-
 }

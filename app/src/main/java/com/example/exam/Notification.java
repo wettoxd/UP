@@ -15,7 +15,7 @@ public class Notification extends AppCompatActivity {
     }
 
     public void backback(View view) {
-        Intent intent = new Intent(Notification.this, Profile_Fragment.class);
+        Intent intent = new Intent(Notification.this, Home_page.class);
         startActivity(intent);
     }
 }

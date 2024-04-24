@@ -69,7 +69,7 @@ public class Log_in extends AppCompatActivity {
     }
 
     public void home_page(View view) {
-        Intent intent = new Intent(Log_in.this, Home_Fragment.class);
+        Intent intent = new Intent(Log_in.this, Home_page.class);
         startActivity(intent);
     }
 }
